@@ -1,0 +1,40 @@
+body {
+    text-align: center;
+    background: url("resources/windows-7-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+}
+
+#board {
+    width: 512px;
+    height: 512px;
+    background-color: #626262;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div{
+    width: 32px;
+    height: 32px;
+    border-style: solid;
+    background-color: #C0C7C8;
+    border-width: medium;
+    border-top-color: #FFFFFF;
+    border-left-color: #FFFFFF;
+    border-bottom-color: #87888F;
+    border-right-color: #87888F;
+    box-sizing: border-box;
+}
+
+#board div.pressed {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
